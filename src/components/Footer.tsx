@@ -6,42 +6,42 @@ import { LINKS } from "@/config/links";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#fafaf9] border-t border-slate-200 py-14">
+    <footer className="bg-[#f8f7f4] border-t border-[#e5e3dc] py-14">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-slate-200">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-[#e5e3dc]">
           <div>
-            <span className="text-xl font-black tracking-tight text-slate-900 block mb-1">
+            <span className="text-xl font-black tracking-tight text-[#0f0f0e] block mb-1">
               NYXIR
             </span>
             <p className="text-xs text-slate-500 max-w-md leading-relaxed">
-              Done-For-You AI Data Infrastructure for E-Commerce Paid Media Agencies. We never run ads. We give agencies proprietary software to win clients and profit intelligence to keep them.
+              Done-For-You AI Data Infrastructure for E-Commerce Paid Media Agencies. We engineer custom-researched acquisition pipelines to win clients and cross-brand economic intelligence to keep them.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-6 text-xs font-semibold text-slate-600">
-            <a href="#the-problem" className="hover:text-slate-900 transition-colors">
+            <a href="#the-problem" className="hover:text-black transition-colors">
               The Problem
             </a>
-            <a href="#product-a" className="hover:text-slate-900 transition-colors">
+            <a href="#product-a" className="hover:text-black transition-colors">
               Product A
             </a>
-            <a href="#product-b" className="hover:text-slate-900 transition-colors">
+            <a href="#product-b" className="hover:text-black transition-colors">
               Product B
             </a>
-            <a href="#comparison" className="hover:text-slate-900 transition-colors">
+            <a href="#comparison" className="hover:text-black transition-colors">
               Why Nyxir
             </a>
-            <a href="#data-safety" className="hover:text-slate-900 transition-colors">
+            <a href="#data-safety" className="hover:text-black transition-colors">
               Data Safety
             </a>
-            <a href="#founder" className="hover:text-slate-900 transition-colors">
+            <a href="#founder" className="hover:text-black transition-colors">
               Founder
             </a>
             <a
               href={LINKS.llmsTxt}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-700 hover:text-teal-900 font-mono"
+              className="text-emerald-700 hover:text-emerald-900 font-mono font-bold"
             >
               /llms.txt
             </a>
@@ -59,7 +59,7 @@ export default function Footer() {
               href={LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-700 hover:text-teal-700 inline-flex items-center gap-1 font-semibold"
+              className="text-slate-700 hover:text-emerald-700 inline-flex items-center gap-1 font-semibold"
             >
               LinkedIn <ArrowUpRight className="h-3 w-3" />
             </a>
@@ -67,7 +67,7 @@ export default function Footer() {
               href={LINKS.primaryCta}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-700 hover:text-teal-900 font-bold"
+              className="text-emerald-700 hover:text-emerald-900 font-bold"
             >
               Book 15-Min Pilot Call →
             </a>

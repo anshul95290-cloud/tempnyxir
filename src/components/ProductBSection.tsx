@@ -1,304 +1,186 @@
 "use client";
 
-import React, { useState } from "react";
-import { ShieldAlert } from "lucide-react";
+import React from "react";
+import ProductBVideoDemo from "./ProductBVideoDemo";
 
 export default function ProductBSection() {
-  const [activeAd, setActiveAd] = useState<"saturated" | "winner" | "ai">("saturated");
-  const [slackAction, setSlackAction] = useState<string | null>(null);
-
-  const adCases = {
-    saturated: {
-      title: "Doctor Reaction UGC (Supplements)",
-      format: "Lo-Fi iPhone UGC",
-      hook: "0-2s Whitecoat Doctor Reaction",
-      saturation: "84% Saturated in Vertical",
-      score: 38,
-      status: "WARNING",
-      badgeColor: "text-rose-400 bg-rose-950/60 border-rose-800",
-      runway: "<3 Days Estimated Runway",
-      recommendation:
-        "Doctor reaction hooks are saturated across 12 competitor stores. Swap 0-2s hook for microscopic texture zoom before spending media budget.",
-      savings: "Estimated $2,400 ad test spend preserved",
+  const pillars = [
+    {
+      num: "PILLAR 01",
+      tag: "CROSS-BRAND BENCHMARKING ARCHITECTURE",
+      subtitle: "The 3-Ring Network Moat (Day 1 to Category Scale)",
+      body: "Breaks single-account silos across three rings: Ring 1 connects all 10–25 brands inside your own agency on Day 1 so every media buyer benefits from portfolio-wide tests and algorithm shifts. Ring 2 tracks competitor Ad Library hook survival (3d vs. 30d+ runway). Ring 3 unlocks an anonymized Cross-Agency Vertical Benchmark Pool (strictly at n ≥ 5 agencies per niche) that no in-house brand team can ever access.",
     },
-    winner: {
-      title: "Cellular Mechanism Split-Screen (Supplements)",
-      format: "Hybrid (2D Animation + Real UGC)",
-      hook: "0-2s Microscopic Cellular Reaction",
-      saturation: "11% Open Angle Runway",
-      score: 92,
-      status: "CLEARED TO LAUNCH",
-      badgeColor: "text-emerald-400 bg-emerald-950/60 border-emerald-800",
-      runway: "24+ Days Estimated Runway",
-      recommendation:
-        "High novelty score. Recommended pairing: 2-Bottle Bundle with 60-day subscription offer.",
-      savings: "Projected 3.8x Blended ROAS on first $5k test",
+    {
+      num: "PILLAR 02",
+      tag: "DELIVERY PERFORMANCE & AD ECONOMIC ACCOUNTING",
+      subtitle: "Creative Vectors ↔ Verified Bank Profit",
+      body: "Connects 12 multimodal creative dimensions (hook archetype, narrative angle, pacing, offer structure) and production workflows (100% Human vs. Hybrid vs. Synthetic AI) directly to real Shopify order/refund webhooks—measuring First-Time CAC, Net Contribution Margin after refunds, exact Days-to-Fatigue, and 60/90-day LTV.",
     },
-    ai: {
-      title: "100% Synthetic AI Avatar Script (Skincare)",
-      format: "Synthetic AI Video + Synthetic TTS",
-      hook: "AI Face Avatar Trend Breakdown",
-      saturation: "62% Saturated",
-      score: 46,
-      status: "MARGIN CAUTION",
-      badgeColor: "text-amber-400 bg-amber-950/60 border-amber-800",
-      runway: "Low Retention Cohort",
-      recommendation:
-        "Synthetic avatars in this vertical generate cheap clicks ($0.42 CPC) but trigger 34% 30-day refund rates in Shopify. Switch to Hybrid mode.",
-      savings: "Prevents high return rate margin erosion",
+    {
+      num: "PILLAR 03",
+      tag: "SYSTEM OF INTELLIGENCE × SYSTEM OF ACTION",
+      subtitle: "From Cross-Brand Telemetry to 1-Click Execution",
+      body: "Passive analytics tools leave media buyers staring at charts after money is already lost. Product B fuses cross-brand economic intelligence directly with four weekly Systems of Action: Pre-Flight 0–100 creative validation before spend, live Slack Advantage+ circuit-breakers with 1-click decision trace logging, algorithmic Monday production briefs, and Day-0 pinned retention proof memos.",
     },
-  };
-
-  const current = adCases[activeAd];
+  ];
 
   return (
-    <section id="product-b" className="py-20 md:py-28 bg-[#fafaf9] border-b border-slate-200/80">
+    <section id="product-b" className="py-20 md:py-28 bg-[#f8f7f4] border-b border-[#e5e3dc]">
       <div className="mx-auto max-w-[1280px] px-6 sm:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-800 bg-amber-50 border border-amber-200 px-3.5 py-1 rounded-full mb-3">
-            <span>Product B · The Delivery & Retention Plane</span>
+          <div className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-wider text-amber-800 bg-amber-50/90 border border-amber-200/80 px-3.5 py-1 rounded-full mb-3">
+            <span>Product B · Cross-Brand Delivery, Ad Economics &amp; Retention Architecture</span>
           </div>
-          <h2 className="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl md:text-5xl mt-2 mb-4">
-            Stop Ad Burn & Prove Real Bank Profit
+          <h2 className="text-3xl font-black tracking-tight text-[#0f0f0e] sm:text-4xl md:text-5xl mt-2 mb-4 leading-tight">
+            Cross-Brand Benchmarking Meets True Ad Economic Accounting.
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            Meta Advantage+ routinely burns client spend on fatiguing ads. Product B scores draft creatives before launch, breaks algorithm traps with live Slack alerts, and connects ad spend directly to verified Shopify net profit.
+            Product B is a cross-business architecture that connects multimodal creative patterns, live ad auction behavior, and verified Shopify financial outcomes across brands—uniting a deep System of Intelligence with a 1-click System of Action.
           </p>
         </div>
 
-        {/* Visual Delivery Flow */}
-        <div className="max-w-5xl mx-auto mb-16">
-          <div className="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mb-3 text-center sm:text-left">
-            THE 5-STEP DELIVERY & RETENTION TIMELINE
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 p-4 bg-white border border-slate-200 rounded-xl">
-            <div className="p-3 bg-slate-50 rounded-lg border border-slate-200/80">
-              <span className="text-[10px] font-mono text-slate-400 block mb-1">STEP 1</span>
-              <span className="font-bold text-xs text-slate-900 block">Draft Ad</span>
-              <span className="text-[11px] text-slate-500">Before Spending $1</span>
-            </div>
-            <div className="p-3 bg-amber-50/40 rounded-lg border border-amber-200">
-              <span className="text-[10px] font-mono text-amber-700 block mb-1">STEP 2</span>
-              <span className="font-bold text-xs text-slate-900 block">0–100 Score</span>
-              <span className="text-[11px] text-slate-500">Angle Saturation Gate</span>
-            </div>
-            <div className="p-3 bg-slate-50 rounded-lg border border-slate-200/80">
-              <span className="text-[10px] font-mono text-slate-400 block mb-1">STEP 3</span>
-              <span className="font-bold text-xs text-slate-900 block">Slack Alerts</span>
-              <span className="text-[11px] text-slate-500">Break Meta ASC Traps</span>
-            </div>
-            <div className="p-3 bg-amber-50/40 rounded-lg border border-amber-200">
-              <span className="text-[10px] font-mono text-amber-700 block mb-1">STEP 4</span>
-              <span className="font-bold text-xs text-slate-900 block">Monday Brief</span>
-              <span className="text-[11px] text-slate-500">Next Winning Angle</span>
-            </div>
-            <div className="col-span-2 md:col-span-1 p-3 bg-slate-50 rounded-lg border border-slate-200/80">
-              <span className="text-[10px] font-mono text-slate-400 block mb-1">STEP 5</span>
-              <span className="font-bold text-xs text-slate-900 block">Monthly Proof</span>
-              <span className="text-[11px] text-slate-500">Day-0 vs Day-30 Cash</span>
-            </div>
-          </div>
-        </div>
-
-        {/* 4 Feature Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          <div className="rounded-xl border border-slate-200 bg-white p-6 hover:border-slate-300 transition-colors">
-            <span className="font-mono text-xs font-bold text-amber-700 block mb-2">01 · PRE-FLIGHT</span>
-            <h3 className="text-base font-bold text-slate-900 mb-2">Score Ads Before Spend</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Junior buyers drop drafts into the gatekeeper before uploading to Meta. Catches 80%+ saturated angles before wasting client testing budget.
-            </p>
-          </div>
-
-          <div className="rounded-xl border border-slate-200 bg-white p-6 hover:border-slate-300 transition-colors">
-            <span className="font-mono text-xs font-bold text-amber-700 block mb-2">02 · CIRCUIT-BREAKER</span>
-            <h3 className="text-base font-bold text-slate-900 mb-2">Stop Meta ASC Traps</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              When Meta dumps 80%+ budget into one ad or burns cash past midday conversion dips, Nyxir fires a 1-click circuit-breaker alert to Slack.
-            </p>
-          </div>
-
-          <div className="rounded-xl border border-slate-200 bg-white p-6 hover:border-slate-300 transition-colors">
-            <span className="font-mono text-xs font-bold text-amber-700 block mb-2">03 · PROFIT TRUTH</span>
-            <h3 className="text-base font-bold text-slate-900 mb-2">Human vs. AI Economics</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Exposes which AI workflows make actual bank profit vs. which ones cause 30%+ Shopify refund rates.
-            </p>
-          </div>
-
-          <div className="rounded-xl border border-slate-200 bg-white p-6 hover:border-slate-300 transition-colors">
-            <span className="font-mono text-xs font-bold text-amber-700 block mb-2">04 · RETENTION</span>
-            <h3 className="text-base font-bold text-slate-900 mb-2">Undeniable Proof Reports</h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Pins verified Shopify net cash added against the client&apos;s exact Day-0 baseline—destroying Month-2 amnesia and locking in retainers.
-            </p>
-          </div>
-        </div>
-
-        {/* Interactive Delivery Plane Console */}
-        <div className="rounded-2xl border border-slate-800 bg-slate-950 text-white p-6 sm:p-10 shadow-2xl">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pb-6 border-b border-slate-800 gap-4">
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="h-2 w-2 rounded-full bg-amber-400" />
-                <span className="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold">
-                  INTERACTIVE SYSTEMS OF ACTION
-                </span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold tracking-tight">
-                Pre-Flight Gate & Live Slack Directives
-              </h3>
-            </div>
-
-            {/* Test Creative Selector */}
-            <div className="flex flex-wrap items-center gap-2 bg-slate-900 p-1.5 rounded-lg border border-slate-800 text-xs">
-              <span className="text-slate-400 font-medium px-2">Test Ad Draft:</span>
-              <button
-                onClick={() => setActiveAd("saturated")}
-                className={`px-3 py-1.5 rounded-md font-bold transition-all ${
-                  activeAd === "saturated"
-                    ? "bg-amber-500 text-slate-950 shadow-sm"
-                    : "text-slate-300 hover:text-white"
-                }`}
-              >
-                1. Doctor Reaction (Saturated)
-              </button>
-              <button
-                onClick={() => setActiveAd("winner")}
-                className={`px-3 py-1.5 rounded-md font-bold transition-all ${
-                  activeAd === "winner"
-                    ? "bg-emerald-500 text-slate-950 shadow-sm"
-                    : "text-slate-300 hover:text-white"
-                }`}
-              >
-                2. Cellular Mechanism (Winner)
-              </button>
-              <button
-                onClick={() => setActiveAd("ai")}
-                className={`px-3 py-1.5 rounded-md font-bold transition-all ${
-                  activeAd === "ai"
-                    ? "bg-teal-500 text-slate-950 shadow-sm"
-                    : "text-slate-300 hover:text-white"
-                }`}
-              >
-                3. Synthetic AI (High Refund)
-              </button>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8">
-            {/* Left Box: Pre-Flight Gatekeeper Simulator */}
-            <div className="lg:col-span-7 rounded-xl border border-slate-800 bg-slate-900/80 p-6 space-y-5">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-800">
-                <span className="text-xs font-mono uppercase text-slate-400">
-                  Pre-Flight Creative Simulator (0-100)
-                </span>
-                <span className={`text-xs font-mono font-bold px-2 py-0.5 rounded border ${current.badgeColor}`}>
-                  {current.status}
-                </span>
-              </div>
-
-              <div className="flex items-center gap-6">
-                <div className="h-24 w-24 rounded-xl border border-slate-700 bg-slate-950 flex flex-col items-center justify-center shrink-0">
-                  <span className="text-xs text-slate-400 font-mono">Score</span>
-                  <span className="text-3xl font-black tabular-nums text-white">
-                    {current.score}
+        {/* 3 Core Architectural Pillars (3-Column Spec Grid) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          {pillars.map((p) => (
+            <div
+              key={p.num}
+              className="rounded-2xl border border-[#e5e3dc] bg-white p-7 shadow-xs hover:border-amber-300 hover:shadow-md transition-all flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="font-mono text-xs font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">
+                    {p.num}
                   </span>
-                  <span className="text-[10px] text-slate-500 font-mono">/ 100</span>
+                  <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest font-bold">
+                    SPEC
+                  </span>
                 </div>
-
-                <div className="space-y-1 text-xs">
-                  <h4 className="text-sm font-bold text-white">{current.title}</h4>
-                  <div className="text-slate-400">Format: <span className="text-slate-200">{current.format}</span></div>
-                  <div className="text-slate-400">Hook Archetype: <span className="text-slate-200">{current.hook}</span></div>
-                  <div className="text-slate-400">Angle Saturation: <span className="text-amber-400 font-bold">{current.saturation}</span></div>
-                </div>
+                <h3 className="font-mono text-xs font-bold uppercase tracking-wider text-slate-800 mb-1">
+                  {p.tag}
+                </h3>
+                <h4 className="text-sm font-bold text-[#0f0f0e] mb-3">
+                  {p.subtitle}
+                </h4>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  {p.body}
+                </p>
               </div>
+            </div>
+          ))}
+        </div>
 
-              <div className="p-4 rounded-lg bg-slate-950 border border-slate-800 text-xs space-y-2">
-                <div className="text-slate-300 leading-relaxed font-sans">
-                  <strong>System Directive:</strong> {current.recommendation}
+        {/* Animated Multi-Layer SVG Architecture Flowchart */}
+        <div className="max-w-5xl mx-auto mb-16 rounded-2xl border border-[#e5e3dc] bg-white p-6 sm:p-8 shadow-xs">
+          <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
+            <div>
+              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400 block mb-1">
+                PRODUCT B 3-LAYER ARCHITECTURE
+              </span>
+              <h4 className="text-sm sm:text-base font-bold text-[#0f0f0e]">
+                Ingestion &amp; Sanitization → System of Intelligence → 4 Systems of Action
+              </h4>
+            </div>
+            <span className="text-xs font-mono font-bold text-amber-600 flex items-center gap-1.5">
+              <span className="h-2 w-2 rounded-full bg-amber-500 animate-pulse" />
+              CROSS-BRAND CONTINUOUS SYNC
+            </span>
+          </div>
+
+          <div className="space-y-4 font-mono text-xs">
+            {/* Layer 1: Ingestion */}
+            <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-2">
+                LAYER 1 · INGESTION &amp; PII SANITIZATION PLANE
+              </span>
+              <div className="flex flex-col md:flex-row items-center gap-2 text-slate-700 font-sans">
+                <span className="p-2 bg-white rounded border border-slate-200 w-full md:w-auto text-center font-mono text-xs">
+                  [Meta, TikTok, Google Read-Only APIs]
+                </span>
+                <span className="text-slate-400 font-mono">+</span>
+                <span className="p-2 bg-white rounded border border-slate-200 w-full md:w-auto text-center font-mono text-xs">
+                  [Competitor Ad Libraries]
+                </span>
+                <span className="text-slate-400 font-mono">+</span>
+                <span className="p-2 bg-white rounded border border-slate-200 w-full md:w-auto text-center font-mono text-xs">
+                  [Shopify Order &amp; Refund Webhooks]
+                </span>
+                <span className="text-amber-500 font-mono font-bold mx-1">──►</span>
+                <span className="p-2 bg-amber-50 rounded border border-amber-200 text-amber-900 font-bold font-mono text-xs">
+                  [PII &amp; Brand Scrubber (Names/Logos Stripped)]
+                </span>
+              </div>
+            </div>
+
+            {/* Connecting flow pulse */}
+            <div className="flex justify-center text-slate-300 font-mono text-xs">
+              ▼
+            </div>
+
+            {/* Layer 2: Intelligence */}
+            <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-2">
+                LAYER 2 · CROSS-BRAND SYSTEM OF INTELLIGENCE
+              </span>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 font-sans text-xs">
+                <div className="p-2.5 bg-white rounded border border-slate-200">
+                  <strong className="block text-slate-900 font-mono text-[11px] mb-1">3-Ring Benchmark Pool</strong>
+                  <span className="text-slate-500 text-[11px]">Agency Portfolio (Day 1) + Public Radar + Vertical Pool (n ≥ 5)</span>
                 </div>
-                <div className="pt-2 border-t border-slate-800 text-emerald-400 font-mono font-bold">
-                  {current.savings}
+                <div className="p-2.5 bg-white rounded border border-slate-200">
+                  <strong className="block text-slate-900 font-mono text-[11px] mb-1">12-Dim Multimodal Vectors</strong>
+                  <span className="text-slate-500 text-[11px]">Hook, angle, pacing paired directly with real Shopify net bank cash</span>
+                </div>
+                <div className="p-2.5 bg-white rounded border border-slate-200">
+                  <strong className="block text-slate-900 font-mono text-[11px] mb-1">Human vs. AI Ledger</strong>
+                  <span className="text-slate-500 text-[11px]">Identifies high-refund synthetic AI vs profit-generating hybrid ads</span>
                 </div>
               </div>
             </div>
 
-            {/* Right Box: Live Slack Circuit-Breaker Card */}
-            <div className="lg:col-span-5 rounded-xl border border-slate-800 bg-slate-900 p-6 space-y-4">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-800">
-                <span className="text-xs font-mono font-bold text-slate-300 flex items-center gap-1.5">
-                  <span className="text-amber-400">#</span> alerts-media-buyers
-                </span>
-                <span className="text-[10px] font-mono text-amber-400 bg-amber-950/60 border border-amber-800 px-2 py-0.5 rounded">
-                  CIRCUIT-BREAKER
-                </span>
-              </div>
+            {/* Connecting flow pulse */}
+            <div className="flex justify-center text-slate-300 font-mono text-xs">
+              ▼
+            </div>
 
-              <div className="p-3.5 bg-slate-950 rounded-lg border border-slate-800 text-xs space-y-2">
-                <div className="flex items-center gap-2 text-rose-400 font-bold">
-                  <ShieldAlert className="h-4 w-4" />
-                  <span>Advantage+ Monopolization Trap</span>
+            {/* Layer 3: System of Action */}
+            <div className="p-4 rounded-xl bg-amber-50/40 border border-amber-200/90">
+              <span className="text-[10px] font-bold text-amber-800 uppercase tracking-wider block mb-2">
+                LAYER 3 · 4 SYSTEMS OF ACTION (WEEKLY EXECUTION)
+              </span>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 font-sans text-xs">
+                <div className="p-2.5 bg-white rounded border border-amber-200/80">
+                  <span className="font-mono text-[10px] text-amber-700 font-bold block mb-0.5">ACTION 1 · BEFORE SPEND</span>
+                  <strong className="text-slate-900 block text-xs">Pre-Flight 0–100 Gate</strong>
+                  <span className="text-[11px] text-slate-500">Stops saturated hooks before launching</span>
                 </div>
-                <p className="text-slate-300 leading-relaxed text-[11px]">
-                  Meta ASC has dumped <strong>84% of daily spend ($1,820)</strong> into Creative #104 after 2:30 PM conversion dip. Frequency among repeat buyers reached 4.1.
-                </p>
-                <div className="text-amber-300 font-mono text-[11px] bg-amber-950/40 p-2 rounded border border-amber-900/60">
-                  Directive: Cap Ad #104 daily budget to $200 or activate Angle #3 (Cellular Mechanism).
+                <div className="p-2.5 bg-white rounded border border-amber-200/80">
+                  <span className="font-mono text-[10px] text-amber-700 font-bold block mb-0.5">ACTION 2 · DURING SPEND</span>
+                  <strong className="text-slate-900 block text-xs">Slack Circuit-Breakers</strong>
+                  <span className="text-[11px] text-slate-500">1-click decision traces break Meta traps</span>
                 </div>
-              </div>
-
-              {/* 1-Click Action Buttons */}
-              <div className="space-y-2 pt-1">
-                <span className="text-[10px] uppercase font-mono text-slate-400 block">
-                  1-Click Media Buyer Response:
-                </span>
-                <div className="grid grid-cols-3 gap-2">
-                  <button
-                    onClick={() => setSlackAction("executed")}
-                    className={`py-2 px-1 text-center rounded-lg font-bold text-xs border transition-all ${
-                      slackAction === "executed"
-                        ? "bg-emerald-500 text-slate-950 border-emerald-400 shadow-sm"
-                        : "bg-slate-800 text-slate-200 border-slate-700 hover:bg-slate-750"
-                    }`}
-                  >
-                    [Executed]
-                  </button>
-                  <button
-                    onClick={() => setSlackAction("scaled")}
-                    className={`py-2 px-1 text-center rounded-lg font-bold text-xs border transition-all ${
-                      slackAction === "scaled"
-                        ? "bg-teal-500 text-slate-950 border-teal-400 shadow-sm"
-                        : "bg-slate-800 text-slate-200 border-slate-700 hover:bg-slate-750"
-                    }`}
-                  >
-                    [Scaled]
-                  </button>
-                  <button
-                    onClick={() => setSlackAction("killed")}
-                    className={`py-2 px-1 text-center rounded-lg font-bold text-xs border transition-all ${
-                      slackAction === "killed"
-                        ? "bg-rose-500 text-white border-rose-400 shadow-sm"
-                        : "bg-slate-800 text-slate-200 border-slate-700 hover:bg-slate-750"
-                    }`}
-                  >
-                    [Killed]
-                  </button>
+                <div className="p-2.5 bg-white rounded border border-amber-200/80">
+                  <span className="font-mono text-[10px] text-amber-700 font-bold block mb-0.5">ACTION 3 · NEXT CYCLE</span>
+                  <strong className="text-slate-900 block text-xs">Monday Production Brief</strong>
+                  <span className="text-[11px] text-slate-500">Points creators to open runway angles</span>
                 </div>
-
-                {/* Feedback trace message */}
-                {slackAction && (
-                  <div className="mt-2 p-2.5 bg-emerald-950/60 border border-emerald-800/80 rounded text-[11px] text-emerald-300 animate-fade-in">
-                    ✓ Logged to Expert Decision Trace! Action ({slackAction}) registered. 7-day verified Shopify profit analysis running in background.
-                  </div>
-                )}
+                <div className="p-2.5 bg-white rounded border border-amber-200/80">
+                  <span className="font-mono text-[10px] text-amber-700 font-bold block mb-0.5">ACTION 4 · CLIENT LOCK-IN</span>
+                  <strong className="text-slate-900 block text-xs">Day-0 Retention Memos</strong>
+                  <span className="text-[11px] text-slate-500">Pins current net cash vs. baseline</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* The New Animated Video Demonstration Component */}
+        <div className="max-w-5xl mx-auto">
+          <ProductBVideoDemo />
+        </div>
+
       </div>
     </section>
   );

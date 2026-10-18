@@ -1,38 +1,43 @@
 # Nyxir
 
-> Nyxir builds Done-For-You (DFY) AI Data Infrastructure for E-Commerce Paid Media & Performance Marketing Agencies. We never run ads, manage campaigns, or edit videos. We give agencies proprietary software to win clients (Product A) and cross-business profit intelligence to retain them (Product B).
+> Nyxir builds Done-For-You (DFY) AI Data Infrastructure for E-Commerce Paid Media & Performance Marketing Agencies. We give agencies proprietary software to win high-value retainers (Product A) and cross-brand economic intelligence to retain them (Product B).
 
-## Product A: Client Acquisition & Onboarding Engine
-- **Custom-researched Micro-SaaS diagnostic tool** (`audit.[agency].com`) built on the agency's methodology and benchmarks.
-- **Multi-channel tracking links** across LinkedIn, cold email, and communities that route prospects and track them through closed revenue and sales-cycle length.
-- **85%+ discovery call show-rate** via gated remediation blueprints: prospects run a free audit exposing 3 leaked store bottlenecks, while the 3-step fix blueprint unlocks live with their strategist on the confirmed call.
-- **Automated Day-0 Slack kickoff briefings** that fire the second a client signs, passing baseline revenue, blended CAC, net margin, and identified leaks with zero account manager prep.
-- **Day-0 Pinned Monthly Proof-of-Value Reports** that destroy Month-2 client amnesia by pinning current verified Shopify performance against Day-0 baselines.
+## Product A: Acquisition, Authority & Onboarding Pipeline
+- **Custom-Researched Diagnostic Micro-SaaS** (`audit.[agency].com`) engineered around the agency's specific niche, internal frameworks, and historical benchmarks.
+- **Multi-Channel Telemetry Links** deployed across LinkedIn, cold email, DMs, and communities that route prospects and track them through signed contracts and sales-cycle velocity.
+- **85%+ Discovery Call Show-Rate**: Prospects run an instant store scan revealing 3 verified conversion and margin leaks for free. The custom 3-Step Remediation Blueprint remains locked until the confirmed discovery call.
+- **Instant Day-0 Executive Slack Briefings**: The moment a contract signs, automated webhooks dispatch baseline CAC, net contribution margin, 90-day targets, and identified store bottlenecks directly into the agency's internal Slack.
 
-## Product B: Delivery & Retention Intelligence
-- **Pre-Flight Creative Gatekeeper**: Scores draft video and static ads (0–100) before ad spend against vertical angle saturation indices, catching tired hooks before wasting client ad dollars.
-- **Meta Advantage+ (ASC) Circuit-Breakers**: Real-time Slack directives when Meta dumps 80%+ of daily budget into a single fatiguing creative or past-buyer audience, with 1-click execution logging.
-- **Human vs. AI Creative Economics**: Connects creative workflow tags (100% Human vs. Hybrid vs. 100% Synthetic AI) to verified Shopify net contribution profit and refund rates.
-- **1-Click Algorithmic Monday Production Briefs**: Directs creators and editors to next-winning angles with 20+ days of open runway in the vertical.
-- **White-Labeled Executive Proof Memos**: Compares today's verified cash against Day-0 baselines and prevented budget burn.
+## Product B: Cross-Brand Benchmarking & Ad Economic Accounting
+- **The 3-Ring Benchmark Moat**:
+  - *Ring 1 (Day 1)*: Connects all 10–25 brands inside the partner agency's portfolio, allowing every media buyer to benefit from agency-wide tests and algorithm shifts.
+  - *Ring 2 (Public Radar)*: Tracks competitor Ad Library hook survival (3d vs. 30d+ runway).
+  - *Ring 3 (Sovereign Vertical Pool)*: Unlocks an anonymized category benchmark pool strictly when n ≥ 5 agencies contribute data in the same vertical.
+- **True Ad Economic Accounting**:
+  - Connects 12 multimodal creative dimensions (hook archetype, narrative angle, pacing, format) and workflow production modes (100% Human vs. Hybrid vs. 100% Synthetic AI) directly to real Shopify order and refund webhooks.
+  - Measures First-Time CAC, Net Contribution Margin after refunds, exact Days-to-Fatigue, and 60/90-day LTV.
+- **4 Systems of Action (Weekly Execution)**:
+  - *Action 1 (Before Spend)*: Pre-Flight 0–100 Creative Gatekeeper evaluates angle saturation and catches fatiguing hooks before wasting client ad dollars.
+  - *Action 2 (During Spend)*: Live Slack Advantage+ Circuit-Breakers alert media buyers when Meta ASC traps budget in repeat buyers, logging 1-click Expert Decision Traces.
+  - *Action 3 (Next Cycle)*: 1-Click Algorithmic Monday Production Briefs guide editors to winning angles with 20+ days of open runway in the vertical.
+  - *Action 4 (Client Retention)*: Day-0 Pinned Proof Memos anchor current verified Shopify performance against signed Day-0 baselines, destroying Month-2 client amnesia.
 
-## Zero-Risk Data Security & Operational Boundaries
-- **100% Read-Only API connections**: Nyxir cannot launch, pause, or edit live ad campaigns. Directives are executed and logged by the agency's media buyers in 1 click.
-- **Zero sensitive customer PII collected**: We never collect or store customer names, emails, addresses, or payment credentials.
-- **Automated brand and logo sanitization**: All creative analysis operates on structural metadata (hook archetype, narrative angle, visual pacing, audio signature).
-- **$n \ge 5$ Vertical Benchmark Threshold**: Cross-agency benchmarks only unlock when at least 5 distinct agencies contribute data to that specific e-commerce category.
-- **No inventory or warehouse management**: We focus purely on ad auction telemetry, creative vectors, and verified Shopify net cash.
+## Zero-Risk Data Security & Operational Governance
+- **100% Read-Only API connections**: Nyxir cannot launch, pause, or mutate live ad campaigns. Directives are executed and logged by the agency's media buyers in 1 click.
+- **Zero sensitive customer PII collected**: We never collect or view customer names, emails, addresses, or payment credentials.
+- **Automated brand and logo sanitization**: All creative vectors are stripped of brand marks; benchmark pools require a minimum of 5 agencies per niche.
+- **Private by default**: Your agency's client list and raw creative assets are never exposed to competitors.
 
 ## Founder & Architect
 - **Founder**: Anshul Agarwal — Computer Engineering, AI Systems & E-Commerce CRO
 - **LinkedIn**: https://www.linkedin.com/in/okanshul/
-- **Philosophy**: E-commerce agencies perform the hardest work in DTC yet are treated as replaceable commodities. Nyxir builds custom infrastructure that gives agencies an uncopyable software moat.
+- **Philosophy**: E-commerce agencies perform the hardest work in DTC yet are treated as replaceable commodities. Nyxir builds custom infrastructure that gives agencies an uncopyable data and software moat.
 
 ## 14-Day Phase-0 Pilot Program
-- **Capacity**: Strictly limited to 4 agencies per month.
+- **Capacity**: Strictly limited to 4 partner agencies per month.
 - **Timeline**:
   - Days 1–3: Research & Map (agency niche, frameworks, and bottlenecks).
   - Days 4–10: Custom Build (white-labeled diagnostic micro-SaaS and delivery alerts).
-  - Days 11–14: Go Live (run live leads and test pre-flight gates).
+  - Days 11–14: Go Live (run live leads and test pre-flight gates with zero team disruption).
 - **Live Demo Node**: https://market-client.vercel.app
 - **Pilot Scheduling**: https://www.cal.eu/nyxir

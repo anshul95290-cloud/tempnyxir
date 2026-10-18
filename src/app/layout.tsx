@@ -1,33 +1,45 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Plus_Jakarta_Sans, Newsreader, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 // Stubbed Vercel analytics components for non-Vercel environment
 const Analytics = () => null;
 const SpeedInsights = () => null;
 
-// ─── Site URL ─────────────────────────────────────────────────────────────────
 const siteUrl = "https://nyxir.online";
 
-// ─── Font ─────────────────────────────────────────────────────────────────────
-const manrope = Manrope({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-manrope",
+  variable: "--font-sans",
   weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
-// ─── SEO Metadata ─────────────────────────────────────────────────────────────
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "NYXIR – DFY AI Infrastructure for E-Commerce Agencies",
+    default: "NYXIR – The AI Infrastructure Layer Brands Can't Build In-House",
     template: "%s | NYXIR",
   },
 
   description:
-    "Custom acquisition tools to win clients (Product A) and profit intelligence to keep them (Product B). Built exclusively for e-commerce performance agencies. 14-day pilot.",
+    "We engineer your agency’s custom-researched acquisition & onboarding pipeline (Product A) and cross-brand performance & ad economics architecture (Product B) for e-commerce performance agencies.",
 
   authors: [
     {
@@ -49,9 +61,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "NYXIR – Own the Software Brands Can’t Replace",
+    title: "NYXIR – The AI Infrastructure Layer Brands Can’t Build In-House",
     description:
-      "Custom acquisition tools to win clients (Product A) and profit intelligence to keep them (Product B). Built for e-commerce paid media agencies.",
+      "Custom acquisition & onboarding pipelines (Product A) and cross-brand benchmarking & ad economic accounting (Product B) built for e-commerce agencies.",
     url: siteUrl,
     siteName: "NYXIR",
     type: "website",
@@ -61,16 +73,16 @@ export const metadata: Metadata = {
         url: "/major.png",
         width: 1200,
         height: 630,
-        alt: "NYXIR – DFY AI Infrastructure for E-Commerce Agencies",
+        alt: "NYXIR – DFY AI Data Infrastructure for E-Commerce Agencies",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "NYXIR – Own the Software Brands Can’t Replace",
+    title: "NYXIR – The AI Infrastructure Layer Brands Can’t Build In-House",
     description:
-      "Custom acquisition tools to win clients (Product A) and profit intelligence to keep them (Product B). Built for e-commerce paid media agencies.",
+      "Custom acquisition & onboarding pipelines (Product A) and cross-brand benchmarking & ad economic accounting (Product B) built for e-commerce agencies.",
     images: ["/major.png"],
   },
 
@@ -93,7 +105,6 @@ export const metadata: Metadata = {
   },
 };
 
-// ─── JSON-LD Structured Data for Search & AI Engines ───────────────────────────
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -107,7 +118,7 @@ const structuredData = {
         url: `${siteUrl}/favicon.png`,
       },
       description:
-        "NYXIR builds Done-For-You (DFY) AI data infrastructure and proprietary software for e-commerce performance marketing agencies. Product A (Client Acquisition & Onboarding Engine) and Product B (Delivery & Retention Intelligence).",
+        "NYXIR engineers Done-For-You (DFY) AI data infrastructure and proprietary software for e-commerce performance marketing agencies: Product A (Acquisition & Onboarding Pipeline) and Product B (Cross-Brand Benchmarking & Ad Economic Accounting).",
       founder: {
         "@type": "Person",
         name: "Anshul Agarwal",
@@ -137,22 +148,22 @@ const structuredData = {
       "@type": "WebPage",
       "@id": `${siteUrl}/#webpage`,
       url: siteUrl,
-      name: "NYXIR – DFY AI Infrastructure for E-Commerce Agencies",
+      name: "NYXIR – The AI Infrastructure Layer Brands Can’t Build In-House",
       isPartOf: { "@id": `${siteUrl}/#website` },
       about: { "@id": `${siteUrl}/#organization` },
       description:
-        "Custom acquisition tools to win clients (Product A) and profit intelligence to keep them (Product B). Built for e-commerce paid media agencies.",
+        "Custom-researched acquisition and onboarding pipelines (Product A) and cross-brand performance & ad economic accounting architecture (Product B) for e-commerce agencies.",
       inLanguage: "en-US",
     },
     {
       "@type": "ProfessionalService",
       "@id": `${siteUrl}/#service`,
-      name: "Done-For-You AI Infrastructure for Agencies",
+      name: "Done-For-You AI Data Infrastructure for E-Commerce Agencies",
       provider: { "@id": `${siteUrl}/#organization` },
       description:
-        "Custom micro SaaS diagnostic engines and delivery profit intelligence software built for e-commerce paid media agencies.",
+        "Custom micro-SaaS diagnostic engines, cross-brand benchmarking architectures, and ad economic accounting systems uniting Systems of Intelligence with 1-click Systems of Action.",
       areaServed: "Worldwide",
-      serviceType: "AI Infrastructure & Software Development",
+      serviceType: "AI Infrastructure & Performance Architecture",
       url: siteUrl,
     },
     {
@@ -163,7 +174,7 @@ const structuredData = {
           name: "Does Nyxir manage our ad campaigns or write to our Meta ad accounts?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Nyxir connects strictly via 100% Read-Only APIs. We cannot launch, pause, or edit live ad campaigns. We deliver pre-launch scores and live Slack directives that your media buyers execute with 1 click.",
+            text: "No. Nyxir connects strictly via 100% Read-Only APIs. We cannot launch, pause, or mutate live ad campaigns. We deliver pre-flight validation scores and live Slack directives that your media buyers execute in 1 click.",
           },
         },
         {
@@ -171,7 +182,15 @@ const structuredData = {
           name: "How does Product A drive an 85%+ discovery call show-rate?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Prospects run your white-labeled micro-SaaS audit to uncover 3 store conversion bottlenecks for free. The step-by-step remediation blueprint is locked on screen and only unlocked live with your growth strategist on the confirmed call.",
+            text: "Prospects run your white-labeled diagnostic micro-SaaS to expose 3 store margin leaks for free. The custom remediation blueprint is locked on screen and only unlocked live with your growth strategist on the confirmed strategy call.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does Product B deliver Cross-Brand Benchmarking & Ad Economic Accounting?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Product B pools creative and auction telemetry across your agency portfolio (Day 1) and vertical benchmarks (n >= 5 agencies), pairing 12 multimodal creative vectors with verified Shopify net profit webhooks, pre-flight 0-100 scoring, and Advantage+ Slack circuit-breakers.",
           },
         },
         {
@@ -179,23 +198,15 @@ const structuredData = {
           name: "What happens during the 14-Day Pilot Program?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Days 1–3: We research your agency's niche and methodology. Days 4–10: We build your custom diagnostic SaaS and delivery alerts. Days 11–14: You launch with live prospects and test pre-flight gates with zero team disruption.",
+            text: "Days 1–3: Research & Map (agency niche and IP). Days 4–10: Custom Build (white-labeled diagnostic micro-SaaS and delivery alerts). Days 11–14: Go Live (run live leads and test pre-flight gates with zero team disruption).",
           },
         },
         {
           "@type": "Question",
-          name: "Do you collect customer names, emails, or payment info?",
+          name: "Do you collect customer names, emails, or sensitive payment info?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Never. We collect zero sensitive customer PII. All creative scoring and benchmark pooling operate on scrubbed structural metadata and anonymized financial ratios.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How many agencies do you onboard per month?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "To maintain direct founder access, deep business research, and high-fidelity custom architecture, Nyxir strictly caps onboarding at 4 agencies per month.",
+            text: "Never. We collect zero sensitive customer PII. All creative scoring and benchmark pooling operate strictly on scrubbed structural metadata and anonymized financial ratios.",
           },
         },
       ],
@@ -203,7 +214,6 @@ const structuredData = {
   ],
 };
 
-// ─── Root Layout ──────────────────────────────────────────────────────────────
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -212,7 +222,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${manrope.variable} font-sans antialiased bg-[#fafaf9] text-[#0f172a] selection:bg-[#0d9488] selection:text-white`}
+        className={`${plusJakarta.variable} ${newsreader.variable} ${jetbrainsMono.variable} font-sans antialiased bg-[#f8f7f4] text-[#0f0f0e] selection:bg-[#10b981] selection:text-white`}
       >
         <script
           type="application/ld+json"
