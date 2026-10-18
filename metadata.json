@@ -1,0 +1,6 @@
+{
+  "name": "NYXIR",
+  "description": "Custom Micro SaaS Sales Engine for Agencies that attaches to your lead and sales systems to attract, qualify, and convert high-intent clients.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

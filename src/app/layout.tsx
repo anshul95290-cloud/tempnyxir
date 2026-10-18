@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// Stubbed Vercel analytics components for non-Vercel environment
+const Analytics = () => null;
+const SpeedInsights = () => null;
 import "./globals.css";
 
 // ─── Site URL ─────────────────────────────────────────────────────────────────
