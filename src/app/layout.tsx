@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import "./globals.css";
+
 // Stubbed Vercel analytics components for non-Vercel environment
 const Analytics = () => null;
 const SpeedInsights = () => null;
-import "./globals.css";
 
 // ─── Site URL ─────────────────────────────────────────────────────────────────
 const siteUrl = "https://nyxir.online";
@@ -18,20 +19,16 @@ const manrope = Manrope({
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  // Makes all relative URLs (OG image, canonical) resolve to the domain
   metadataBase: new URL(siteUrl),
 
-  // Title with fallback + template for future pages
   title: {
-    default: "NYXIR – Custom Micro SaaS Sales Engine for Agencies",
+    default: "NYXIR – DFY AI Infrastructure for E-Commerce Agencies",
     template: "%s | NYXIR",
   },
 
-  // Description — accurate, mentions founder for name searchability
   description:
-    "NYXIR, founded by Anshul Agarwal, designs and builds custom micro SaaS tools that plug into your agency's CRM and lead system to attract, qualify, and convert high-intent clients. 3-week delivery, done-for-you.",
+    "Custom acquisition tools to win clients (Product A) and profit intelligence to keep them (Product B). Built exclusively for e-commerce performance agencies. 14-day pilot.",
 
-  // Founder attribution — "built by anshul" + LinkedIn are visible on the page
   authors: [
     {
       name: "Anshul Agarwal",
@@ -41,23 +38,20 @@ export const metadata: Metadata = {
   creator: "Anshul Agarwal",
   publisher: "NYXIR",
 
-  // Canonical URL — tells Google this is the one authoritative URL
   alternates: {
     canonical: "/",
   },
 
-  // Favicon
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
 
-  // OpenGraph — controls link previews on LinkedIn, WhatsApp, Facebook
   openGraph: {
-    title: "NYXIR – Custom Micro SaaS Sales Engine for Agencies",
+    title: "NYXIR – Own the Software Brands Can’t Replace",
     description:
-      "Custom micro SaaS tools built by Anshul Agarwal's NYXIR — plug directly into your CRM and lead system to attract, qualify, and close high-intent agency clients.",
+      "Custom acquisition tools to win clients (Product A) and profit intelligence to keep them (Product B). Built for e-commerce paid media agencies.",
     url: siteUrl,
     siteName: "NYXIR",
     type: "website",
@@ -67,21 +61,19 @@ export const metadata: Metadata = {
         url: "/major.png",
         width: 1200,
         height: 630,
-        alt: "NYXIR – Custom Micro SaaS Sales Engine for Agencies by Anshul Agarwal",
+        alt: "NYXIR – DFY AI Infrastructure for E-Commerce Agencies",
       },
     ],
   },
 
-  // Twitter / X Card — controls previews on Twitter/X
   twitter: {
     card: "summary_large_image",
-    title: "NYXIR – Custom Micro SaaS Sales Engine for Agencies",
+    title: "NYXIR – Own the Software Brands Can’t Replace",
     description:
-      "Custom micro SaaS tools built by NYXIR. Founded by Anshul Agarwal. Attract, qualify, and close high-intent agency clients in 3 weeks.",
+      "Custom acquisition tools to win clients (Product A) and profit intelligence to keep them (Product B). Built for e-commerce paid media agencies.",
     images: ["/major.png"],
   },
 
-  // Robots — explicitly allow full Google crawling and indexing
   robots: {
     index: true,
     follow: true,
@@ -94,7 +86,6 @@ export const metadata: Metadata = {
     },
   },
 
-  // Stops iOS from auto-converting text into tappable phone/email links
   formatDetection: {
     telephone: false,
     email: false,
@@ -102,12 +93,10 @@ export const metadata: Metadata = {
   },
 };
 
-// ─── JSON-LD Structured Data ───────────────────────────────────────────────────
-// Plain object — injected as a normal <script> tag (Next.js recommended pattern)
+// ─── JSON-LD Structured Data for Search & AI Engines ───────────────────────────
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
-    // 1. Organization — helps Google build a knowledge panel for NYXIR
     {
       "@type": "Organization",
       "@id": `${siteUrl}/#organization`,
@@ -118,10 +107,11 @@ const structuredData = {
         url: `${siteUrl}/favicon.png`,
       },
       description:
-        "NYXIR designs and builds custom micro SaaS lead magnet tools that plug into agency CRM and lead systems to attract, qualify, and convert high-intent clients.",
+        "NYXIR builds Done-For-You (DFY) AI data infrastructure and proprietary software for e-commerce performance marketing agencies. Product A (Client Acquisition & Onboarding Engine) and Product B (Delivery & Retention Intelligence).",
       founder: {
         "@type": "Person",
         name: "Anshul Agarwal",
+        jobTitle: "Founder & System Architect",
         url: "https://www.linkedin.com/in/okanshul/",
         sameAs: ["https://www.linkedin.com/in/okanshul/"],
       },
@@ -132,89 +122,80 @@ const structuredData = {
       },
       sameAs: ["https://www.linkedin.com/in/okanshul/"],
     },
-
-    // 2. WebSite — describes the site structure to Google
     {
       "@type": "WebSite",
       "@id": `${siteUrl}/#website`,
       url: siteUrl,
       name: "NYXIR",
-      description: "Micro SaaS Sales Engine for Agencies",
+      description: "DFY AI Data Infrastructure for E-Commerce Agencies",
       publisher: {
         "@id": `${siteUrl}/#organization`,
       },
       inLanguage: "en-US",
     },
-
-    // 3. WebPage — describes this specific homepage
     {
       "@type": "WebPage",
       "@id": `${siteUrl}/#webpage`,
       url: siteUrl,
-      name: "NYXIR – Custom Micro SaaS Sales Engine for Agencies",
+      name: "NYXIR – DFY AI Infrastructure for E-Commerce Agencies",
       isPartOf: { "@id": `${siteUrl}/#website` },
       about: { "@id": `${siteUrl}/#organization` },
       description:
-        "NYXIR, founded by Anshul Agarwal, builds custom micro SaaS tools that act as a sales engine — plugging into your agency CRM to attract, qualify, and convert high-intent clients in 3 weeks.",
+        "Custom acquisition tools to win clients (Product A) and profit intelligence to keep them (Product B). Built for e-commerce paid media agencies.",
       inLanguage: "en-US",
     },
-
-    // 4. Service — describes what NYXIR sells (matches page content)
     {
-      "@type": "Service",
+      "@type": "ProfessionalService",
       "@id": `${siteUrl}/#service`,
-      name: "Custom Micro SaaS Lead Magnet Development",
+      name: "Done-For-You AI Infrastructure for Agencies",
       provider: { "@id": `${siteUrl}/#organization` },
       description:
-        "NYXIR designs and codes a custom interactive micro SaaS tool tailored to your agency's niche, then integrates it with your CRM to capture, score, and convert warm leads automatically.",
+        "Custom micro SaaS diagnostic engines and delivery profit intelligence software built for e-commerce paid media agencies.",
       areaServed: "Worldwide",
-      serviceType: "Micro SaaS Development & Lead Generation System",
+      serviceType: "AI Infrastructure & Software Development",
       url: siteUrl,
     },
-
-    // 5. FAQPage — maps exactly to the FAQ section (id="faq") on page.tsx
-    // These are the real questions and answers visible on the page
     {
       "@type": "FAQPage",
       mainEntity: [
         {
           "@type": "Question",
-          name: "Is this right for a brand-new agency with only 1-2 clients?",
+          name: "Does Nyxir manage our ad campaigns or write to our Meta ad accounts?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "It can be used mainly for credibility and learning the market. It is not a magic tap for instant leads, but it can help a young agency look more serious, demonstrate deep domain knowledge, and collect higher-quality data from prospects early on.",
+            text: "No. Nyxir connects strictly via 100% Read-Only APIs. We cannot launch, pause, or edit live ad campaigns. We deliver pre-launch scores and live Slack directives that your media buyers execute with 1 click.",
           },
         },
         {
           "@type": "Question",
-          name: "How will I get traffic to the micro SaaS?",
+          name: "How does Product A drive an 85%+ discovery call show-rate?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Because the tool is free and genuinely useful, it can be shared easily in professional communities, online groups, and as contextual callouts in your content. Over time, you can layer in paid traffic, cold outreach referrals, or strategic partnerships.",
+            text: "Prospects run your white-labeled micro-SaaS audit to uncover 3 store conversion bottlenecks for free. The step-by-step remediation blueprint is locked on screen and only unlocked live with your growth strategist on the confirmed call.",
           },
         },
         {
           "@type": "Question",
-          name: "How many clients do you take per month and when can I expect delivery?",
+          name: "What happens during the 14-Day Pilot Program?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "NYXIR takes fewer than 4 clients per month to stay focused and maintain high-fidelity implementation. Development and integration take within 3 weeks.",
+            text: "Days 1–3: We research your agency's niche and methodology. Days 4–10: We build your custom diagnostic SaaS and delivery alerts. Days 11–14: You launch with live prospects and test pre-flight gates with zero team disruption.",
           },
         },
         {
           "@type": "Question",
-          name: "What is included in the current offer?",
+          name: "Do you collect customer names, emails, or payment info?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The package includes strategic design, custom coding, copy generation, CRM integrations, one free iteration/update after launch, and 1 month of basic maintenance.",
+            text: "Never. We collect zero sensitive customer PII. All creative scoring and benchmark pooling operate on scrubbed structural metadata and anonymized financial ratios.",
           },
         },
         {
           "@type": "Question",
-          name: "Why should I trust NYXIR?",
+          name: "How many agencies do you onboard per month?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "NYXIR believes in top-notch quality every time. The team researches trends, analyzes each business, and finds a strategic sweet spot before building anything. Founder Anshul Agarwal has a strong business background and the team has extensive experience in automations and delivering excellent results.",
+            text: "To maintain direct founder access, deep business research, and high-fidelity custom architecture, Nyxir strictly caps onboarding at 4 agencies per month.",
           },
         },
       ],
@@ -231,9 +212,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${manrope.variable} font-sans antialiased bg-brand-bg text-brand-dark`}
+        className={`${manrope.variable} font-sans antialiased bg-[#fafaf9] text-[#0f172a] selection:bg-[#0d9488] selection:text-white`}
       >
-        {/* JSON-LD structured data — plain <script> tag, Next.js recommended pattern */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
