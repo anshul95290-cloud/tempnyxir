@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import ProductBVideoDemo from "./ProductBVideoDemo";
+import ProductBVisualWorkflow from "./ProductBVisualWorkflow";
 
 export default function ProductBSection() {
   const pillars = [
@@ -176,9 +176,9 @@ export default function ProductBSection() {
           </div>
         </div>
 
-        {/* The New Animated Video Demonstration Component */}
+        {/* The Animated Visual Workflow Component */}
         <div className="max-w-5xl mx-auto">
-          <ProductBVideoDemo />
+          <ProductBVisualWorkflow />
         </div>
 
       </div>

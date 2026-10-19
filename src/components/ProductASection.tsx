@@ -3,7 +3,7 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { LINKS } from "@/config/links";
-import ProductAVideoWalkthrough from "./ProductAVideoWalkthrough";
+import ProductAVisualWorkflow from "./ProductAVisualWorkflow";
 
 export default function ProductASection() {
   const nodes = [
@@ -135,9 +135,9 @@ export default function ProductASection() {
           ))}
         </div>
 
-        {/* The New Animated Video Walkthrough Component */}
+        {/* The Animated Visual Workflow Component */}
         <div className="max-w-5xl mx-auto">
-          <ProductAVideoWalkthrough />
+          <ProductAVisualWorkflow />
 
           <div className="text-center pt-5">
             <a
