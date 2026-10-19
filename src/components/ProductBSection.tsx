@@ -9,7 +9,7 @@ export default function ProductBSection() {
       num: "PILLAR 01",
       tag: "CROSS-BRAND BENCHMARKING ARCHITECTURE",
       subtitle: "The 3-Ring Network Moat (Day 1 to Category Scale)",
-      body: "Breaks single-account silos across three rings: Ring 1 connects all 10–25 brands inside your own agency on Day 1 so every media buyer benefits from portfolio-wide tests and algorithm shifts. Ring 2 tracks competitor Ad Library hook survival (3d vs. 30d+ runway). Ring 3 unlocks an anonymized Cross-Agency Vertical Benchmark Pool (strictly at n ≥ 5 agencies per niche) that no in-house brand team can ever access.",
+      body: "Breaks single-account silos across three rings: Ring 1 connects all 10–25 brands inside your own agency on Day 1 so every media buyer benefits from portfolio-wide tests and algorithm shifts. Ring 2 tracks competitor Ad Library hook survival (3d vs. 30d+ runway). Ring 3 unlocks an anonymized Cross-Agency Vertical Benchmark Pool with complete brand privacy and zero sensitive data exposure.",
     },
     {
       num: "PILLAR 02",
@@ -127,7 +127,7 @@ export default function ProductBSection() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3 font-sans text-xs">
                 <div className="p-2.5 bg-white rounded border border-slate-200">
                   <strong className="block text-slate-900 font-mono text-[11px] mb-1">3-Ring Benchmark Pool</strong>
-                  <span className="text-slate-500 text-[11px]">Agency Portfolio (Day 1) + Public Radar + Vertical Pool (n ≥ 5)</span>
+                  <span className="text-slate-500 text-[11px]">Agency Portfolio (Day 1) + Public Radar + Sovereign Vertical Benchmark Pool</span>
                 </div>
                 <div className="p-2.5 bg-white rounded border border-slate-200">
                   <strong className="block text-slate-900 font-mono text-[11px] mb-1">12-Dim Multimodal Vectors</strong>

@@ -20,7 +20,7 @@ export default function ComparisonSection() {
     {
       dimension: "Discovery Call Show-Up Rate",
       without: "50–55% industry show-up rate; prospects watch free manual Loom audits and ghost the call.",
-      withNyxir: "85%+ Show-Up Rate—prospects see 3 live store leaks instantly, while the custom Remediation Blueprint unlocks live on the call.",
+      withNyxir: "X+% Show-Up Rate—prospects see 3 live store leaks instantly, while the custom Remediation Blueprint unlocks live on the call.",
     },
     {
       dimension: "Retainer Pricing Power",
@@ -38,7 +38,7 @@ export default function ComparisonSection() {
     {
       dimension: "Cross-Brand Intelligence",
       without: "Every media buyer works in an isolated single-brand silo; lessons on Account #1 never help Account #15.",
-      withNyxir: "3-Ring Cross-Brand Architecture pools creative and auction intelligence across your entire agency portfolio (Day 1) and vertical (n ≥ 5).",
+      withNyxir: "3-Ring Cross-Brand Architecture pools creative and auction intelligence across your entire agency portfolio (Day 1) and vertical benchmarks.",
     },
     {
       dimension: "Ad Economic Accounting",

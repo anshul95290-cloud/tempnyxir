@@ -25,12 +25,12 @@ export default function ProblemSection() {
     },
     {
       index: "03",
-      tag: "HYPER-SATURATED MARKET",
+      tag: "OVER-TARGETED & NO AI PRESENCE",
       icon: Users,
-      title: "Over-Targeted Clients & Tiny Proof Windows",
+      title: "Over-Targeted Clients & Zero AI Asset Presence",
       description:
-        "DTC founders are bombarded with agency pitches every single day. Standard outreach gets ignored, and even after a client signs, you have an unforgivingly short window to prove undeniable bank impact before impatience sets in.",
-      impact: "50% discovery call ghost rates and immediate Month-1 pressure.",
+        "DTC founders are relentlessly bombarded with agency outreach every single day. Without a proprietary AI asset or technical presence, your agency blends into the background looking like just another commodity agency—leading to ignored pitches, high discovery call ghost rates, and zero pricing leverage.",
+      impact: "Ignored outreach, high call ghost rates, and commodity status.",
     },
     {
       index: "04",

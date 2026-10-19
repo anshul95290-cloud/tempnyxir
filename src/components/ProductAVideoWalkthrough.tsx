@@ -18,7 +18,7 @@ const scenes = [
   },
   {
     id: 2,
-    title: "03. The 85%+ Show-Rate Lock",
+    title: "03. The X+% Show-Rate Lock",
     subtitle: "Gated Blueprint Unlocks on Strategy Call",
     duration: 5000,
   },
@@ -130,7 +130,7 @@ export default function ProductAVideoWalkthrough() {
                   </div>
                   <div className="flex justify-between">
                     <span>Discovery Calls:</span>
-                    <span className="text-emerald-400 font-bold">6 booked (85% show rate)</span>
+                    <span className="text-emerald-400 font-bold">6 booked (X+% show rate)</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Signed Retainers:</span>
@@ -154,7 +154,7 @@ export default function ProductAVideoWalkthrough() {
                   </div>
                   <div className="flex justify-between">
                     <span>Discovery Calls:</span>
-                    <span className="text-emerald-400 font-bold">8 booked (88% show rate)</span>
+                    <span className="text-emerald-400 font-bold">8 booked (X+% show rate)</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Signed Retainers:</span>
@@ -272,7 +272,7 @@ export default function ProductAVideoWalkthrough() {
                   Strategy Session Confirmed · Thursday 2:00 PM EST
                 </span>
                 <span className="text-emerald-400 font-bold bg-emerald-950/80 px-2.5 py-1 rounded border border-emerald-800">
-                  Show-Up Probability: 88.4%
+                  Show-Up Probability: X+%
                 </span>
               </div>
             </div>

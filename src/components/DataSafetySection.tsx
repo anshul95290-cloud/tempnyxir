@@ -21,10 +21,10 @@ export default function DataSafetySection() {
     },
     {
       icon: Server,
-      step: "03 · ANONYMOUS BENCHMARKS",
-      title: "Anonymous Pattern Math (n ≥ 5)",
+      step: "03 · BENCHMARK & BRAND PRIVACY",
+      title: "Cross-Agency Benchmark & Complete Brand Privacy",
       description:
-        "Brand names, creative files, and logos are strictly scrubbed. Cross-agency category benchmarks only unlock when at least 5 distinct agencies contribute data to that specific e-commerce vertical.",
+        "All client names, brand privacy, and store specifics are 100% private. Cross-agency performance benchmarks run purely on anonymized structural signals—no sensitive data is ever collected or taken from brands or agencies.",
     },
   ];
 
@@ -68,9 +68,9 @@ export default function DataSafetySection() {
               <span className="text-[11px] text-slate-500">Structural Vectors Only</span>
             </div>
             <div className="p-3 rounded-xl bg-[#f8f7f4] border border-[#e5e3dc] text-center">
-              <span className="text-emerald-700 font-bold block mb-1">04 · SOVEREIGN</span>
-              <span className="text-slate-800 font-bold block">[n ≥ 5 Vertical Lock]</span>
-              <span className="text-[11px] text-slate-500">Never Below 5 Agencies</span>
+              <span className="text-emerald-700 font-bold block mb-1">04 · BRAND PRIVACY</span>
+              <span className="text-slate-800 font-bold block">[100% Private Brand Data]</span>
+              <span className="text-[11px] text-slate-500">Zero Sensitive Data Taken</span>
             </div>
           </div>
         </div>
@@ -101,8 +101,25 @@ export default function DataSafetySection() {
           })}
         </div>
 
+        {/* Highlight Callout Box: Data privacy is our most important motto */}
+        <div className="mt-10 max-w-5xl mx-auto rounded-2xl border-2 border-emerald-500/40 bg-emerald-50/60 p-6 sm:p-8 shadow-xs">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+            <div className="h-12 w-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <ShieldCheck className="h-6 w-6" />
+            </div>
+            <div className="space-y-1.5 text-center sm:text-left">
+              <h4 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight">
+                &ldquo;Data privacy is our most important motto.&rdquo;
+              </h4>
+              <p className="text-sm text-slate-700 leading-relaxed font-normal">
+                We never collect, extract, or store sensitive customer information, personal identities, or raw creative IP. All client names, brand privacy, and store economics remain strictly confidential. Zero sensitive data is ever taken from your agency or client brands—your data belongs entirely to you.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Summary Footer */}
-        <div className="mt-12 max-w-5xl mx-auto rounded-xl border border-[#e5e3dc] bg-white p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600">
+        <div className="mt-10 max-w-5xl mx-auto rounded-xl border border-[#e5e3dc] bg-white p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600">
           <div className="flex items-center gap-3">
             <div className="h-2 w-2 rounded-full bg-emerald-500 shrink-0" />
             <span>

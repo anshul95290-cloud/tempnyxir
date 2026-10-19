@@ -13,10 +13,14 @@ import FounderSection from "@/components/FounderSection";
 import PilotSection from "@/components/PilotSection";
 import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
+import BackgroundStars from "@/components/BackgroundStars";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#f8f7f4] text-[#0f0f0e] selection:bg-emerald-600 selection:text-white">
+    <div className="relative min-h-screen bg-[#f8f7f4] text-[#0f0f0e] selection:bg-emerald-600 selection:text-white">
+      {/* Subtle gentle star glowing animation in background */}
+      <BackgroundStars />
+
       {/* Continuous Announcement Marquee at the very top */}
       <AnnouncementBanner />
       
@@ -42,10 +46,10 @@ export default function Home() {
         {/* Section 6: Zero-Risk Data Safety */}
         <DataSafetySection />
 
-        {/* Section 7: Founder & System Architect (Untouched per instructions) */}
+        {/* Section 7: Founder & AI Business Expert */}
         <FounderSection />
 
-        {/* Section 8: 14-Day Pilot Program */}
+        {/* Section 8: Pilot Program */}
         <PilotSection />
 
         {/* Section 9: FAQ */}

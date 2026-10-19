@@ -8,7 +8,7 @@ export default function AnnouncementBanner() {
     <div className="flex items-center gap-6 whitespace-nowrap shrink-0">
       <span className="flex items-center gap-2">
         <span className="inline-block h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-        <span className="text-emerald-400 font-bold">14-DAY PHASE-0 PILOT PROGRAM NOW OPEN FOR E-COMMERCE AGENCIES</span>
+        <span className="text-emerald-400 font-bold">PHASE-0 PILOT PROGRAM NOW OPEN FOR E-COMMERCE AGENCIES</span>
       </span>
       <span className="text-slate-500">·</span>
       <span className="text-slate-200">
@@ -23,7 +23,7 @@ export default function AnnouncementBanner() {
         rel="noopener noreferrer"
         className="text-white underline underline-offset-4 hover:text-emerald-300 font-bold transition-colors"
       >
-        [BOOK YOUR PILOT PROGRAM NOW →]
+        [GET A PILOT NOW →]
       </a>
       <span className="text-slate-600 px-2">{"///"}</span>
     </div>

@@ -12,24 +12,24 @@ export default function FaqSection() {
       a: "No. Nyxir connects strictly via 100% Read-Only APIs. We never launch, pause, or mutate live ad campaigns directly. Instead, we deliver pre-flight validation scores and live Slack directives that your media buyers execute and log with 1 click.",
     },
     {
-      q: "How does Product A drive an 85%+ discovery call show-rate?",
+      q: "How does Product A drive an X+% discovery call show-rate?",
       a: "Prospects run your white-labeled diagnostic micro-SaaS to expose 3 store conversion and margin bottlenecks for free. However, the custom 3-step remediation blueprint to fix those leaks remains locked on screen with the notice that their growth strategist will unlock it live on their confirmed call. This gives the brand founder an immediate financial incentive to attend the session.",
     },
     {
       q: "How does Product B deliver Cross-Brand Benchmarking & Ad Economic Accounting?",
-      a: "Product B pools creative vectors and ad auction telemetry across your agency portfolio (Day 1) and vertical benchmarks (strictly at n ≥ 5 agencies). It connects 12 multimodal creative tags and workflow modes (100% Human vs. Hybrid vs. Synthetic AI) directly to verified Shopify order and refund webhooks—uniting pre-flight 0–100 scoring, live Slack Advantage+ circuit-breakers, algorithmic Monday briefs, and Day-0 pinned retention proof memos.",
+      a: "Product B pools creative vectors and ad auction telemetry across your agency portfolio (Day 1) and sovereign vertical benchmarks with complete brand privacy. It connects 12 multimodal creative tags and workflow modes (100% Human vs. Hybrid vs. Synthetic AI) directly to verified Shopify order and refund webhooks—uniting pre-flight 0–100 scoring, live Slack Advantage+ circuit-breakers, algorithmic Monday briefs, and Day-0 pinned retention proof memos.",
     },
     {
       q: "How will our agency get traffic to our custom diagnostic micro-SaaS?",
       a: "Because the diagnostic engine is genuinely useful and free, it cuts through the noise far better than cold pitches or ebooks. You deploy unique telemetry links across founder LinkedIn posts, cold email sequences, DMs, and communities. Our ledger tracks which exact acquisition channel generates signed high-value retainers versus tire-kickers.",
     },
     {
-      q: "How many agencies do you onboard per month and what is the pilot timeline?",
-      a: "To maintain high-fidelity implementation, custom niche research, and direct founder access, Nyxir strictly caps onboarding at 4 partner agencies per month. The Phase-0 Pilot program runs for 14 days: Days 1–3 are dedicated to Research & Mapping, Days 4–10 to Custom Build, and Days 11–14 to Live Deployment and testing with zero team disruption.",
+      q: "How many agencies do you onboard per month and what happens in the pilot program?",
+      a: "To maintain high-fidelity implementation, custom niche research, and direct technical execution, Nyxir strictly caps onboarding at 4 partner agencies per month. During the pilot program, we analyze your agency and case studies, capture market trends to craft the custom blueprint, build the micro-SaaS with clean UI/MCP/APIs, and test running costs to keep them at an absolute minimum.",
     },
     {
       q: "Do you collect customer names, emails, or sensitive payment info?",
-      a: "Never. We collect zero sensitive customer PII. All creative scoring, angle saturation indices, and cross-agency benchmark pools operate strictly on scrubbed structural metadata and anonymized financial ratios.",
+      a: "Never. Data privacy is our most important motto. We collect zero sensitive customer PII or brand financial secrets. All creative scoring, angle saturation indices, and cross-agency benchmark pools operate strictly on scrubbed structural metadata and anonymized ratios.",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function FaqSection() {
             Straightforward Answers
           </h2>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Everything you need to know about our data security boundaries, 14-day pilot, and cross-brand architecture.
+            Everything you need to know about our data security boundaries, pilot program, and cross-brand architecture.
           </p>
         </div>
 

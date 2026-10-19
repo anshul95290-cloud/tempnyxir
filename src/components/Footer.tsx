@@ -37,14 +37,6 @@ export default function Footer() {
             <a href="#founder" className="hover:text-black transition-colors">
               Founder
             </a>
-            <a
-              href={LINKS.llmsTxt}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-emerald-700 hover:text-emerald-900 font-mono font-bold"
-            >
-              /llms.txt
-            </a>
           </div>
         </div>
 
@@ -69,7 +61,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-emerald-700 hover:text-emerald-900 font-bold"
             >
-              Book 15-Min Pilot Call →
+              Get a Pilot →
             </a>
           </div>
         </div>

@@ -24,7 +24,7 @@ export default function ProductASection() {
     },
     {
       num: "04",
-      title: "The 85%+ Show-Rate Lock",
+      title: "The X+% Show-Rate Lock",
       desc: "Custom 3-Step Remediation Blueprint remains locked until the confirmed discovery call.",
     },
     {
@@ -47,7 +47,7 @@ export default function ProductASection() {
     },
     {
       tag: "03 · HIGH-INTENT PIPELINE",
-      title: "85%+ Call Show-Rates & Premium Fee Authority",
+      title: "X+% Call Show-Rates & Premium Fee Authority",
       desc: "Because prospects experience your proprietary system and see 3 verified store leaks before speaking to you, they show up to unlock their fix blueprint—and never ask you to discount your retainer.",
     },
     {

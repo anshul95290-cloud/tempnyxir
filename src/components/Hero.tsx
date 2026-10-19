@@ -40,7 +40,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex h-13 items-center justify-center rounded-xl bg-[#0f0f0e] px-8 text-base font-bold text-white shadow-md hover:bg-slate-800 hover:-translate-y-0.5 transition-all duration-200"
             >
-              Book Your 14-Day Pilot Program
+              Get a Pilot
               <ArrowRight className="ml-2.5 h-4 w-4" />
             </a>
 
@@ -85,7 +85,7 @@ export default function Hero() {
                 <div className="flex items-start gap-2">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
                   <span>
-                    <strong className="text-slate-900">85%+ Sales Call Show-Rates</strong> by exposing 3 live store leaks and locking the fix blueprint for the call
+                    <strong className="text-slate-900">X+% Sales Call Show-Rates</strong> by exposing 3 live store leaks and locking the fix blueprint for the call
                   </span>
                 </div>
                 <div className="flex items-start gap-2">

@@ -1,18 +1,18 @@
 # Nyxir
 
-> Nyxir builds Done-For-You (DFY) AI Data Infrastructure for E-Commerce Paid Media & Performance Marketing Agencies. We give agencies proprietary software to win high-value retainers (Product A) and cross-brand economic intelligence to retain them (Product B).
+> Nyxir builds Done-For-You (DFY) AI Data Infrastructure for E-Commerce Paid Media & Performance Marketing Agencies. We engineer custom-researched acquisition pipelines to win high-value retainers (Product A) and cross-brand performance & ad economic intelligence to retain them (Product B).
 
 ## Product A: Acquisition, Authority & Onboarding Pipeline
 - **Custom-Researched Diagnostic Micro-SaaS** (`audit.[agency].com`) engineered around the agency's specific niche, internal frameworks, and historical benchmarks.
 - **Multi-Channel Telemetry Links** deployed across LinkedIn, cold email, DMs, and communities that route prospects and track them through signed contracts and sales-cycle velocity.
-- **85%+ Discovery Call Show-Rate**: Prospects run an instant store scan revealing 3 verified conversion and margin leaks for free. The custom 3-Step Remediation Blueprint remains locked until the confirmed discovery call.
+- **X+% Discovery Call Show-Rate**: Prospects run an instant store scan revealing 3 verified conversion and margin leaks for free. The custom 3-Step Remediation Blueprint remains locked until the confirmed discovery call.
 - **Instant Day-0 Executive Slack Briefings**: The moment a contract signs, automated webhooks dispatch baseline CAC, net contribution margin, 90-day targets, and identified store bottlenecks directly into the agency's internal Slack.
 
 ## Product B: Cross-Brand Benchmarking & Ad Economic Accounting
 - **The 3-Ring Benchmark Moat**:
   - *Ring 1 (Day 1)*: Connects all 10–25 brands inside the partner agency's portfolio, allowing every media buyer to benefit from agency-wide tests and algorithm shifts.
   - *Ring 2 (Public Radar)*: Tracks competitor Ad Library hook survival (3d vs. 30d+ runway).
-  - *Ring 3 (Sovereign Vertical Pool)*: Unlocks an anonymized category benchmark pool strictly when n ≥ 5 agencies contribute data in the same vertical.
+  - *Ring 3 (Sovereign Vertical Benchmark Pool)*: Unlocks anonymized category benchmark intelligence with complete brand privacy and zero sensitive client data exposure.
 - **True Ad Economic Accounting**:
   - Connects 12 multimodal creative dimensions (hook archetype, narrative angle, pacing, format) and workflow production modes (100% Human vs. Hybrid vs. 100% Synthetic AI) directly to real Shopify order and refund webhooks.
   - Measures First-Time CAC, Net Contribution Margin after refunds, exact Days-to-Fatigue, and 60/90-day LTV.
@@ -23,21 +23,23 @@
   - *Action 4 (Client Retention)*: Day-0 Pinned Proof Memos anchor current verified Shopify performance against signed Day-0 baselines, destroying Month-2 client amnesia.
 
 ## Zero-Risk Data Security & Operational Governance
+- **"Data privacy is our most important motto."**
 - **100% Read-Only API connections**: Nyxir cannot launch, pause, or mutate live ad campaigns. Directives are executed and logged by the agency's media buyers in 1 click.
 - **Zero sensitive customer PII collected**: We never collect or view customer names, emails, addresses, or payment credentials.
-- **Automated brand and logo sanitization**: All creative vectors are stripped of brand marks; benchmark pools require a minimum of 5 agencies per niche.
+- **Automated brand and logo sanitization**: All creative vectors are stripped of brand marks; all client names, brand privacy, and store economics remain strictly confidential.
 - **Private by default**: Your agency's client list and raw creative assets are never exposed to competitors.
 
 ## Founder & Architect
-- **Founder**: Anshul Agarwal — Computer Engineering, AI Systems & E-Commerce CRO
+- **Founder**: Anshul Agarwal — Founder & AI Business Expert, Building Infra Systems
 - **LinkedIn**: https://www.linkedin.com/in/okanshul/
 - **Philosophy**: E-commerce agencies perform the hardest work in DTC yet are treated as replaceable commodities. Nyxir builds custom infrastructure that gives agencies an uncopyable data and software moat.
 
-## 14-Day Phase-0 Pilot Program
-- **Capacity**: Strictly limited to 4 partner agencies per month.
-- **Timeline**:
-  - Days 1–3: Research & Map (agency niche, frameworks, and bottlenecks).
-  - Days 4–10: Custom Build (white-labeled diagnostic micro-SaaS and delivery alerts).
-  - Days 11–14: Go Live (run live leads and test pre-flight gates with zero team disruption).
+## Pilot Program
+- **Capacity**: Pilot program capacity cap is fixed at 4 partner agencies per month.
+- **4 Core Steps**:
+  1. Analyze & map your agency and case studies from top clients.
+  2. Capture market trends and buyer sentiments to craft the tailored micro-SaaS blueprint.
+  3. Design and build everything cleanly with high-grade UI/UX, MCP, and custom APIs.
+  4. Test and optimize infrastructure so running costs are kept at an absolute minimum, connecting to suitable analytics platforms.
 - **Live Demo Node**: https://market-client.vercel.app
 - **Pilot Scheduling**: https://www.cal.eu/nyxir

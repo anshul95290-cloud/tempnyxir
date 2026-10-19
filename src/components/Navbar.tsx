@@ -68,7 +68,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="inline-flex h-11 items-center justify-center rounded-lg bg-[#0f0f0e] px-5 text-sm font-bold text-white shadow-xs hover:bg-slate-800 hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap"
           >
-            Start 14-Day Pilot
+            Get a Pilot
             <ArrowRight className="ml-2 h-4 w-4" />
           </a>
 
@@ -143,7 +143,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="text-center py-2.5 bg-[#0f0f0e] text-white rounded-lg font-bold text-sm"
               >
-                Start 14-Day Pilot →
+                Get a Pilot →
               </a>
             </div>
           </nav>
