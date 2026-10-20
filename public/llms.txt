@@ -41,5 +41,5 @@
   2. Capture market trends and buyer sentiments to craft the tailored micro-SaaS blueprint.
   3. Design and build everything cleanly with high-grade UI/UX, MCP, and custom APIs.
   4. Test and optimize infrastructure so running costs are kept at an absolute minimum, connecting to suitable analytics platforms.
-- **Live Demo Node**: https://market-client.vercel.app
+- **Live Demo Node**: https://demon-taupe.vercel.app/
 - **Pilot Scheduling**: https://www.cal.eu/nyxir

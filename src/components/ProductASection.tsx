@@ -146,7 +146,7 @@ export default function ProductASection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs text-emerald-800 hover:text-emerald-950 font-bold underline underline-offset-4 font-mono transition-colors"
             >
-              Inspect live demo diagnostic node: market-client.vercel.app
+              Inspect live demo diagnostic node: demon-taupe.vercel.app
               <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           </div>

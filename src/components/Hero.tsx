@@ -27,9 +27,9 @@ export default function Hero() {
             </span>
           </h1>
 
-          {/* New Subheadline */}
-          <p className="mx-auto max-w-3xl text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed mb-8 md:mb-10 animate-fade-in-up font-normal">
-            We engineer your agency’s custom-researched acquisition &amp; onboarding pipeline (Product A) and cross-brand performance &amp; ad economics architecture (Product B)—so you win high-value retainers without discounting, align ad delivery with real bank outcomes, and make your agency impossible to replace.
+          {/* Subheadline updated per request */}
+          <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed mb-8 md:mb-10 animate-fade-in-up font-medium">
+            Build up an infrastructure that can make you irreplaceable.
           </p>
 
           {/* CTAs */}
@@ -57,64 +57,105 @@ export default function Hero() {
         </div>
 
         {/* Two-Card Architecture Panel (Product A ↔ Product B) */}
-        <div className="max-w-5xl mx-auto rounded-2xl border border-[#e5e3dc] bg-white p-6 sm:p-8 shadow-xl shadow-slate-200/40 animate-fade-in-up">
-          <div className="grid grid-cols-1 lg:grid-cols-11 gap-6 items-center">
+        <div className="max-w-6xl mx-auto rounded-2xl border border-[#e5e3dc] bg-white p-6 sm:p-8 shadow-xl shadow-slate-200/40 animate-fade-in-up">
+          <div className="grid grid-cols-1 lg:grid-cols-11 gap-6 items-start">
+            
             {/* Left Card: Product A */}
-            <div className="lg:col-span-5 rounded-xl border border-emerald-200/80 bg-emerald-50/30 p-6 relative hover:border-emerald-300 transition-colors">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-800">
-                  PRODUCT A: ACQUIRE &amp; ONBOARD
-                </span>
-                <span className="text-xs font-semibold text-emerald-900 bg-emerald-100/90 px-2 py-0.5 rounded font-mono">
-                  Acquisition Pipeline
-                </span>
-              </div>
-              <h3 className="text-xl font-bold text-[#0f0f0e] mb-2">
-                Custom-Researched Diagnostic Micro-SaaS
-              </h3>
-              <p className="text-sm text-slate-600 mb-4 leading-relaxed">
-                Engineered from deep research into your agency’s niche, internal frameworks, and benchmarks—turning multi-channel traffic into high-show-rate sales calls and automated Day-0 onboarding.
-              </p>
-              <div className="space-y-2.5 pt-3 border-t border-emerald-200/60 text-xs text-slate-700">
-                <div className="flex items-start gap-2">
-                  <div className="h-1.5 w-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
-                  <span>
-                    <strong className="text-slate-900">Stand Out Across Every Channel</strong> via custom telemetry links for LinkedIn, cold email &amp; communities
+            <div className="lg:col-span-5 rounded-xl border border-emerald-200/80 bg-emerald-50/30 p-6 sm:p-7 relative hover:border-emerald-300 transition-colors flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-800">
+                    PRODUCT A: ACQUIRE &amp; ONBOARD
+                  </span>
+                  <span className="text-xs font-semibold text-emerald-900 bg-emerald-100/90 px-2 py-0.5 rounded font-mono">
+                    Client Journey Engine
                   </span>
                 </div>
-                <div className="flex items-start gap-2">
-                  <div className="h-1.5 w-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
-                  <span>
-                    <strong className="text-slate-900">X+% Sales Call Show-Rates</strong> by exposing 3 live store leaks and locking the fix blueprint for the call
-                  </span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="h-1.5 w-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
-                  <span>
-                    <strong className="text-slate-900">Instant Day-0 Slack Kickoff</strong> pushing baseline CAC, margins &amp; client expectations upon signature
-                  </span>
+                
+                <h3 className="text-xl font-bold text-[#0f0f0e] mb-1.5">
+                  Agency Acquisition &amp; Client Journey Engine
+                </h3>
+                
+                <p className="text-xs sm:text-sm font-bold text-emerald-950 mb-2 leading-snug">
+                  Differentiate your agency. Improve close rates. Win better clients. Charge a premium.
+                </p>
+                
+                <p className="text-xs sm:text-sm text-slate-600 mb-5 leading-relaxed">
+                  A custom-researched, branded diagnostic micro-SaaS built around your agency&apos;s niche, expertise and frameworks—turning your expertise into an interactive prospect experience and connecting acquisition, sales, onboarding and ongoing proof of value.
+                </p>
+
+                <div className="space-y-3 pt-4 border-t border-emerald-200/60 text-xs text-slate-700">
+                  <div className="flex items-start gap-2">
+                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
+                    <div>
+                      <strong className="text-slate-900 block mb-0.5">Stand Out &amp; Get Discovered</strong>
+                      <span className="text-slate-600 leading-relaxed block">
+                        Differentiate your agency with a branded diagnostic prospects can actually use. Showcase your expertise beyond another website, pitch deck or generic sales promise, with opportunities to improve visibility across AI-driven discovery.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
+                    <div>
+                      <strong className="text-slate-900 block mb-0.5">Convert More Opportunities Into Clients</strong>
+                      <span className="text-slate-600 leading-relaxed block">
+                        Give prospects a reason to engage with your expertise before the sales call. Track every acquisition channel through booked calls and closed retainers to understand what improves conversion and which sources bring the most valuable clients.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
+                    <div>
+                      <strong className="text-slate-900 block mb-0.5">Win Better Clients &amp; Charge More</strong>
+                      <span className="text-slate-600 leading-relaxed block">
+                        Capture prospect pain points, expectations and growth goals early. Understand which client profiles and acquisition channels lead to stronger commercial opportunities, helping you focus on better-fit prospects.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
+                    <div>
+                      <strong className="text-slate-900 block mb-0.5">Onboard Faster &amp; Eliminate Lost Context</strong>
+                      <span className="text-slate-600 leading-relaxed block">
+                        Carry sales conversations, client expectations, pain points and Day-0 baselines into structured onboarding—reducing repetitive questions, manual handoffs and account-manager preparation.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
+                    <div>
+                      <strong className="text-slate-900 block mb-0.5">Prove Value &amp; Strengthen Retention</strong>
+                      <span className="text-slate-600 leading-relaxed block">
+                        Track client progress against their starting point through recurring performance audits and relevant category benchmarks.
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Center Animated Bi-Directional Bridge */}
-            <div className="lg:col-span-1 flex flex-col items-center justify-center text-center py-3 lg:py-0">
+            <div className="lg:col-span-1 flex flex-col items-center justify-center text-center py-4 lg:py-16">
               <div className="hidden lg:flex flex-col items-center gap-2">
-                <span className="text-[9px] font-mono font-bold text-slate-400 rotate-90 my-3 tracking-widest whitespace-nowrap">
+                <span className="text-[9px] font-mono font-bold text-slate-400 rotate-90 my-4 tracking-widest whitespace-nowrap">
                   DAY-0 BASELINES
                 </span>
-                <svg className="w-8 h-16" viewBox="0 0 32 64" fill="none">
+                <svg className="w-8 h-20" viewBox="0 0 32 80" fill="none">
                   <path
-                    d="M16 4V60"
+                    d="M16 4V76"
                     stroke="#10b981"
                     strokeWidth="2"
                     strokeDasharray="4 4"
                     className="animate-flow-dash"
                   />
-                  <polygon points="16,62 12,54 20,54" fill="#10b981" />
+                  <polygon points="16,78 12,70 20,70" fill="#10b981" />
                   <polygon points="16,2 12,10 20,10" fill="#f59e0b" />
                 </svg>
-                <span className="text-[9px] font-mono font-bold text-amber-600 rotate-90 my-3 tracking-widest whitespace-nowrap">
+                <span className="text-[9px] font-mono font-bold text-amber-600 rotate-90 my-4 tracking-widest whitespace-nowrap">
                   NET CASH PROOF
                 </span>
               </div>
@@ -125,42 +166,63 @@ export default function Hero() {
             </div>
 
             {/* Right Card: Product B */}
-            <div className="lg:col-span-5 rounded-xl border border-amber-200/80 bg-amber-50/20 p-6 relative hover:border-amber-300 transition-colors">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-amber-800">
-                  PRODUCT B: DELIVER &amp; RETAIN
-                </span>
-                <span className="text-xs font-semibold text-amber-900 bg-amber-100/90 px-2 py-0.5 rounded font-mono">
-                  Delivery &amp; Economic Plane
-                </span>
-              </div>
-              <h3 className="text-xl font-bold text-[#0f0f0e] mb-2">
-                Cross-Brand Benchmarking &amp; Ad Economic Accounting
-              </h3>
-              <p className="text-sm text-slate-600 mb-4 leading-relaxed">
-                A cross-business intelligence and action architecture connecting multimodal creative vectors, ad auction behavior, and verified Shopify net cash across brands.
-              </p>
-              <div className="space-y-2.5 pt-3 border-t border-amber-200/60 text-xs text-slate-700">
-                <div className="flex items-start gap-2">
-                  <div className="h-1.5 w-1.5 rounded-full bg-amber-600 mt-1.5 shrink-0" />
-                  <span>
-                    <strong className="text-slate-900">Cross-Brand Benchmark Moat</strong> pooling performance intelligence across your agency portfolio &amp; vertical
+            <div className="lg:col-span-5 rounded-xl border border-amber-200/80 bg-amber-50/20 p-6 sm:p-7 relative hover:border-amber-300 transition-colors flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-amber-800">
+                    PRODUCT B: DELIVER &amp; RETAIN
+                  </span>
+                  <span className="text-xs font-semibold text-amber-900 bg-amber-100/90 px-2 py-0.5 rounded font-mono">
+                    Delivery Action Plane
                   </span>
                 </div>
-                <div className="flex items-start gap-2">
-                  <div className="h-1.5 w-1.5 rounded-full bg-amber-600 mt-1.5 shrink-0" />
-                  <span>
-                    <strong className="text-slate-900">True Ad Economic Accounting</strong> pairing Human, Hybrid &amp; AI ads with Shopify net profit, refunds &amp; LTV
-                  </span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="h-1.5 w-1.5 rounded-full bg-amber-600 mt-1.5 shrink-0" />
-                  <span>
-                    <strong className="text-slate-900">System of Intelligence + Action</strong> driving pre-flight validation, live Slack circuit-breakers &amp; Day-0 proof memos
-                  </span>
+                
+                <h3 className="text-xl font-bold text-[#0f0f0e] mb-1.5">
+                  Cross-Brand Intelligence &amp; Delivery Action Plane
+                </h3>
+                
+                <p className="text-xs sm:text-sm font-bold text-amber-950 mb-2 leading-snug">
+                  Make better delivery decisions across every brand you manage.
+                </p>
+                
+                <p className="text-xs sm:text-sm text-slate-600 mb-5 leading-relaxed">
+                  NYXIR connects performance signals, market intelligence and real Shopify economics to help your team spot risks earlier, act on opportunities, improve delivery across accounts, and demonstrate the value of your agency.
+                </p>
+
+                <div className="space-y-3 pt-4 border-t border-amber-200/60 text-xs text-slate-700">
+                  <div className="flex items-start gap-2">
+                    <div className="h-1.5 w-1.5 rounded-full bg-amber-600 mt-1.5 shrink-0" />
+                    <div>
+                      <strong className="text-slate-900 block mb-0.5">Cross-Brand Intelligence</strong>
+                      <span className="text-slate-600 leading-relaxed block">
+                        Learn from performance across your brand portfolio. Identify patterns, benchmark results, spot emerging risks and uncover opportunities that a single ad account cannot reveal.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <div className="h-1.5 w-1.5 rounded-full bg-amber-600 mt-1.5 shrink-0" />
+                    <div>
+                      <strong className="text-slate-900 block mb-0.5">True Ad Economics</strong>
+                      <span className="text-slate-600 leading-relaxed block">
+                        Understand what actually drives profit—not just reported ROAS. Connect creative and production decisions to customer acquisition costs, refunds, contribution margin and customer lifetime value.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <div className="h-1.5 w-1.5 rounded-full bg-amber-600 mt-1.5 shrink-0" />
+                    <div>
+                      <strong className="text-slate-900 block mb-0.5">Intelligence That Drives Action</strong>
+                      <span className="text-slate-600 leading-relaxed block">
+                        Turn signals into next steps: pre-launch creative assessments, actionable delivery alerts, clearer production briefs and proof-of-value reports that show clients what your work delivers.
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
